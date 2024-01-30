@@ -1,0 +1,94 @@
+# The script of the game goes in this file.
+
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
+
+define e = Character("Markiplier")
+define p = character("Phone Guy")
+
+
+# The game starts here.
+
+label start:
+
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bg room.jpg") to the
+    # images directory to show it.
+
+    scene newspaper.png 
+
+    "Family Pizzeria look for security guard to work the Nightshift. 12AM to 6AM" 
+   
+    "Moniter cameras, ensure the safety of equipment and animatronic characters" 
+  
+    "Freddy Fazebear's Pizza is Not Responible for any injuries/dismemberment" 
+    
+    ":)" 
+
+    scene newspaper.png
+    with Dissolve(.5)
+
+    pause .5
+
+    scene fnaf office.png 
+
+    e "if only my youtube career took off like I hoped it did." 
+ 
+    e "If that were the case, I wouldn't have gotten this shitty job." 
+
+    queue sound "FNaF 1 Telephone Ringtone.mp3" 
+
+    p "Hello..? Hello, Hello?" 
+
+    p "Uh, I wanted to record a message for you, to help you get settled down on your first night."
+
+    e "oh god." 
+    
+    e "Can I just skip this?" 
+
+    p "No you can't" 
+
+    e "What--!" 
+
+    e "You said this was a recorded message!" 
+
+    p "anywho, as I've said before, this IS a recorded message. So I can't hear anything you're saying." 
+    
+    p "Any responses that seem related to whatever you're saying are purely coincidental. Got it?" 
+
+    e "..." 
+
+    p "I said got it?" 
+
+    menu:
+
+        "Got it.":
+            jump choice1_yes
+
+        "You Mutha--!":
+            jump choice1_no
+
+    
+
+    
+
+    
+    e "Ehh no company is perfect. I could either deal with haunted furry robots or Karens at TjMaxx." 
+
+    "
+
+    # This shows a character sprite. A placeholder is used, but you can
+    # replace it by adding a file named "eileen happy.png" to the images
+    # directory.
+
+    show eileen happy
+
+    # These display lines of dialogue.
+
+    e "You've created a new Ren'Py game."
+
+    e "Once you add a story, pictures, and music, you can release it to the world!"
+
+    # This ends the game.
+
+    return
